@@ -1,5 +1,8 @@
 import os
+
 print("Credits: https://github.com/angelocarasig")
+
+# Replaces a substring in all filenames in a directory
 directory = input("Directory Path: ")
 input_string = input("Input String: ")
 replacement_string = input("Replacement String: ")
