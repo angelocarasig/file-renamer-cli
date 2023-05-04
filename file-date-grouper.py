@@ -1,4 +1,5 @@
 import os
+import sys
 import shutil
 from datetime import datetime
 
@@ -20,7 +21,7 @@ def organize_files(directory):
                 os.mkdir(folder_dir)
                 print(f"Created folder: {folder_name}")
             
-            if folder_counts[folder_name] is None:
+            if folder_name not in folder_counts:
                 folder_counts[folder_name] = 0
 
             shutil.move(item_path, folder_dir)
@@ -34,6 +35,9 @@ def main():
     try:
         directory = input("Directory Path: ")
         organize_files(directory)
+    except KeyboardInterrupt:
+        print("\nExiting...")
+        sys.exit(0)
     except FileNotFoundError:
         print(f"Directory {directory} not found")
     except Exception as e:
