@@ -7,7 +7,7 @@ Useful for removing certain substrings such as file extensions from the current 
 # file date grouper
 Organizes all files in a folder based on month and year.
 
-# file-folder-renamer
+# file folder renamer
 
 NOTE: Depth limited to 1 (not going to bother for more unless use-case gets extended)
 
