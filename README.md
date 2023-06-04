@@ -9,7 +9,7 @@ Organizes all files in a folder based on month and year.
 
 # file folder renamer
 
-NOTE: Depth limited to 1 (not going to bother for more unless use-case gets extended)
+NOTE: Depth limited to 1 (not going to bother for more unless use-case gets extended).
 
 Sample before/after structure:
 ```
@@ -45,4 +45,4 @@ root_folder/
 ```
 
 # file number detector
-Finds values that are missing from a directory
+Detects missing values from a directory.
